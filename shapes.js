@@ -70,7 +70,7 @@ function doTheDraw() { // 4 10 3
 
   overlay.background(0, 0, 0);
   cutText(
-    'For My Darlin\' Emma', overlay.width/2, overlay.height/2+450,
+    'For  For My Darlin\' Emma', overlay.width/2, overlay.height/2+450,
     40, 3, 100, 100
   );
   textSize = overlay.textSize(); // Store text size
