@@ -70,7 +70,7 @@ function doTheDraw() { // 4 10 3
 
   overlay.background(0, 0, 0);
   cutText(
-    'asd wa yowlin\' four', overlay.width/2, overlay.height/2+450, // For My Darlin\' Emma
+    'For My Darlin\' Emma', overlay.width/2, overlay.height/2+450,
     40, 3, 100, 100
   );
   textSize = overlay.textSize(); // Store text size
@@ -144,8 +144,8 @@ function cutText(theText, x, y, t_Size, s_Weight, f_A, s_A){
     let posX = x + cos(angle) * distance; // X-coordinate within the range of the flower's x
     let posY = normalHeight + sin(angle) * distance; // Y-coordinate within the range of the flower's y
     
-    //drawRose(posX, posY, 0); // Draw the flower
-    //drawRose(posX - 130, posY + 50, 1.3)
+    drawRose(posX, posY, 0); // Draw the flower
+    drawRose(posX - 130, posY + 50, 1.3)
     //drawRose(posX + 130, posY - 50, -1.3) i do NOT have time to work with this  
   //}
 
