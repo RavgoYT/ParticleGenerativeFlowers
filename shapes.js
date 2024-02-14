@@ -71,7 +71,7 @@ function doTheDraw() { // 4 10 3
   overlay.background(0, 0, 0);
   cutText(
     'For My Darlin\' Emma', overlay.width/2, overlay.height/2+450,
-    40, 3, 100, 100
+    37, 3, 100, 100
   );
   textSize = overlay.textSize(); // Store text size
   density = 100
@@ -128,7 +128,7 @@ function doTheDraw() { // 4 10 3
 }
 
 function cutText(theText, x, y, t_Size, s_Weight, f_A, s_A){
-  let normalHeight = (y - 450) - 300
+  let normalHeight = (y - 420) - 300
   t_Size = t_Size - (3 * theText.length)
   overlay.stroke(255);
   overlay.strokeWeight(s_Weight);
