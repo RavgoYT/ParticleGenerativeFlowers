@@ -37,26 +37,26 @@ function setup() {
    centerY = overlay.height / 2 - 55;
 
   var space = width / density
-  
+
   for (var x = 0; x < width; x += space) {
-    
+
     for (var y = 0; y < height; y += space) {
        var p = createVector(x + random(-10, 10), y + random(-10, 10))
        points.push(p)
     }
   }
-  
+
   shuffle(points, true)
-  
+
   r1 = 215//random(255)
   r2 = random(255)
   g1 = 77//random(255)
   g2 = random(255)
   b1 = 210//random(255)
   b2 = random(255)
-  
+
   mult = 0.0006//random(0.09, 0.9)
-  
+
 }
 
 
@@ -143,7 +143,7 @@ function cutText(theText, x, y, t_Size, s_Weight, f_A, s_A){
     let distance = 0//random(50, 150); // Random distance from the center within a range
     let posX = x + cos(angle) * distance; // X-coordinate within the range of the flower's x
     let posY = normalHeight + sin(angle) * distance; // Y-coordinate within the range of the flower's y
-    
+
     drawRose(posX, posY, 0); // Draw the flower
     drawRose(posX - 130, posY + 50, 1.3)
     //drawRose(posX + 130, posY - 50, -1.3) i do NOT have time to work with this  
@@ -162,17 +162,17 @@ function drawRose(x, normalHeight, angle){
   let radius = 50;
   let petals = randomPetalNumber;
   let stemLength = 200 * petals; // Length of the stem
-  
+
   // Draw the circles (petals)
   let j = petals;
 
     // Draw the stem
     overlay.strokeWeight(6); // Adjust thickness as needed
     overlay.line(normalHeight + 82, x - 300, normalHeight + radius * 1.75 + stemLength, x - 300 + (angle * 150)); // Stem extends from the bottom of the flower
-  
+
     overlay.strokeWeight(0);
   for (let i = 0; i < petals; i++) {
-    
+
     let startAngle = -2 * PI/(3 + angle); // Start angle (30 degrees clockwise from the vertical)
     let endAngle = -(PI + (2 * PI/(6 + angle))); // End angle (30 degrees counter-clockwise from the vertical)
     let yOffset = i * 12.5;
