@@ -70,7 +70,7 @@ function doTheDraw() { // 4 10 3
 
   overlay.background(0, 0, 0);
   cutText(
-    'For  For My Darlin\' Emma', overlay.width/2, overlay.height/2+450,
+    'For My Darlin\' Emma', overlay.width/2, overlay.height/2+450,
     40, 3, 100, 100
   );
   textSize = overlay.textSize(); // Store text size
@@ -153,7 +153,7 @@ function cutText(theText, x, y, t_Size, s_Weight, f_A, s_A){
   overlay.translate(0, 0);
   overlay.rotate(-HALF_PI);
   overlay.textSize(80);
-  overlay.text(theText, 0 - 700, 0 + 1200);
+  overlay.text(theText, 0 - 420, 0 + 1200);
   overlay.pop();
   overlay.noErase();
 }
