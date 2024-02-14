@@ -153,7 +153,7 @@ function cutText(theText, x, y, t_Size, s_Weight, f_A, s_A){
   overlay.translate(0, 0);
   overlay.rotate(-HALF_PI);
   overlay.textSize(80);
-  overlay.text(theText, 0 - 590, 0 + 1200);
+  overlay.text(theText, 0 - 700, 0 + 1200);
   overlay.pop();
   overlay.noErase();
 }
